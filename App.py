@@ -30,7 +30,7 @@ forecast_error = st.number_input("Forecast Error", value=0.0)
 # Categorical inputs
 season = st.selectbox("Season", ["off-peak", "peak"])
 item_category = st.selectbox("Item Category", ["essential", "non-essential"])
-supplier_reliability = st.selectbox("Supplier Reliability", ["high", "low", "medium"])
+supplier_reliability = st.selectbox("Supplier Reliability", ["high", "low"])
 
 if st.button("Predict Stock Status"):
     try:
